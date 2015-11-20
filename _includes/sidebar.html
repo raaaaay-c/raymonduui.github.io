@@ -1,17 +1,14 @@
-<div class="4u">
+<div id="sidebar">
 
 	<!-- Sidebar -->
 	{% for post in site.posts offset: 0 limit: 2 %}
-		<section class="box">
-			<a href="#" class="image featured"><img src="{{ site.baseurl }}{{ post.featured }}" alt="" /></a>
-			<header>
-				<h3>{{ post.title }}</h3>
-			</header>
+		<section>
+			<h3>{{ post.title }}</h3>
 			{{ post.excerpt }}
 			<footer>
-				<a href="{{ site.baseurl }}{{ post.url }}" class="button alt">Magna sed taciti</a>
+				<a href="{{ site.baseurl }}{{ post.url }}" class="button">Continue Reading</a>
 			</footer>
 		</section>
 	{% endfor %}
-
+	
 </div>
